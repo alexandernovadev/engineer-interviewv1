@@ -1,0 +1,60 @@
+.todo-item {
+  background: var(--color-background-primary);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+}
+
+.todo-item__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item__title {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  flex: 1;
+}
+
+.todo-item__actions {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.todo-item__button {
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  font-size: var(--font-size-xs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.todo-item__button--left {
+  background-color: var(--color-danger);
+  color: var(--color-background-primary);
+}
+
+.todo-item__button--right {
+  background-color: var(--color-success);
+  color: var(--color-background-primary);
+}
+
+.todo-item__button:hover:not(.todo-item__button--disabled) {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.todo-item__button--disabled {
+  background-color: var(--color-disabled);
+  color: var(--color-disabled-text);
+  cursor: not-allowed;
+  opacity: 0.5;
+}

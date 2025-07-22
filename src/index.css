@@ -1,5 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+  /* Colors */
+  --color-primary: #007bff;
+  --color-primary-hover: #0056b3;
+  --color-success: #51cf66;
+  --color-danger: #ff6b6b;
+  --color-disabled: #ccc;
+  --color-disabled-text: #999;
+  --color-text-primary: #333;
+  --color-text-secondary: #666;
+  --color-background-primary: #fff;
+  --color-background-secondary: #f8f9fa;
+  --color-border: #e0e0e0;
+  --color-border-light: #e9ecef;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-shadow-heavy: rgba(0, 0, 0, 0.25);
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-xxl: 24px;
+
+  /* Border radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 6px;
+  --border-radius-lg: 8px;
+  --border-radius-xl: 12px;
+  --border-radius-xxl: 40px;
+
+  /* Font sizes */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px var(--color-shadow);
+  --shadow-md: 0 4px 6px var(--color-shadow);
+  --shadow-lg: 0px 4px 4px var(--color-shadow-heavy);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }

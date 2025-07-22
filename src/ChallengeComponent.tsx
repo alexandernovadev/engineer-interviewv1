@@ -1,10 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { Board } from './components';
+import { useTasks } from './hooks/useTasks/useTasks';
+import './App.css';
 
 export function ChallengeComponent() {
+  const { tasks, addTask, moveTask } = useTasks();
+
   return (
-    <>
-      {/* Delete this h2, and add your own code here. */}
-      <h2 style={{ textAlign: 'center', paddingTop: 200, paddingBottom: 200 }}>Your code goes here</h2>
-    </>
-  )
+    <div className="app">
+      <Board 
+        tasks={tasks}
+        onMoveTask={moveTask}
+        onAddTask={addTask}
+      />
+    </div>
+  );
 }
