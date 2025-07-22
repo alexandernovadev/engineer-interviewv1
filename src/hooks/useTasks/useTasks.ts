@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { Task, UseTasksReturn } from './types';
 
 const initialTasks: Task[] = [
-  { id: '1', title: 'Mow The lawn', status: 'todo' },
-  { id: '2', title: 'Pull Weeds', status: 'inProgress' },
-  { id: '3', title: 'Rake the leaves', status: 'done' },
+  { id: '1', title: 'Learn JavaScript', status: 'todo' },
+  { id: '2', title: 'Master React', status: 'inProgress' },
+  { id: '3', title: 'Study TypeScript', status: 'done' },
 ];
 
 export const useTasks = (): UseTasksReturn => {

@@ -1,6 +1,5 @@
 .app {
-  min-height: 100vh;
-  background: #000;
+  min-height: 70vh;
   padding: var(--spacing-xl);
   display: flex;
   align-items: center;
@@ -9,13 +8,10 @@
 
 .App {
   min-height: 100vh;
-  background: #000;
 }
 
 .App__header {
-  background: #000;
   padding: var(--spacing-xl);
-  color: var(--color-background-primary);
 }
 
 .App__header-content {

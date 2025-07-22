@@ -12,9 +12,9 @@ test('renders the challenge application', () => {
   expect(screen.getByText('Done')).toBeInTheDocument();
   
   // Check that initial tasks are present
-  expect(screen.getByText('Mow The lawn')).toBeInTheDocument();
-  expect(screen.getByText('Pull Weeds')).toBeInTheDocument();
-  expect(screen.getByText('Rake the leaves')).toBeInTheDocument();
+  expect(screen.getByText('Learn JavaScript')).toBeInTheDocument();
+  expect(screen.getByText('Master React')).toBeInTheDocument();
+  expect(screen.getByText('Study TypeScript')).toBeInTheDocument();
   
   // Check that the add task form is present
   expect(screen.getByPlaceholderText('Add Task')).toBeInTheDocument();
