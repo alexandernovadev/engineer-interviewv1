@@ -48,7 +48,7 @@
 .App__main {
   width: calc(100vw - 50px);
   margin: 0 auto;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 100px);
   background: var(--color-background-primary);
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -57,6 +57,7 @@
   overflow: auto;
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
 }
 
 .code-box {
