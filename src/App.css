@@ -2,9 +2,10 @@
   flex: 1;
   padding: var(--spacing-xl);
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
   overflow: hidden;
+  height: 100%;
 }
 
 .App {
@@ -47,7 +48,7 @@
 .App__main {
   width: calc(100vw - 50px);
   margin: 0 auto;
-  max-height: 100dvh;
+  height: calc(100vh - 120px);
   background: var(--color-background-primary);
   border: 1px solid #000000;
   box-sizing: border-box;
